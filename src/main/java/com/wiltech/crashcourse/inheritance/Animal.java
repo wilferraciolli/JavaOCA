@@ -10,9 +10,14 @@ package com.wiltech.crashcourse.inheritance;
  * The type Animal.
  */
 public abstract class Animal {
-    abstract void  doStuff();
+    public abstract String favoriteFood();
 
-    public void doStuff2(){
+    public void feed(String food){
+        if (food.equals(favoriteFood())){
+            System.out.println("Yum! eating " + food);
+        }else{
+            System.out.println("Not Yum! eating " + food);
+        }
 
     }
 
