@@ -10,6 +10,10 @@ package com.wiltech.crashcourse.inheritance;
  * The type Inheritance part 2.
  */
 public class InheritancePart2 {
+    /**
+     * The entry point of application.
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
     }
@@ -20,7 +24,16 @@ public class InheritancePart2 {
  * The type Parent.
  */
 class Parent{
+    /**
+     * Get one parent.
+     * @return the parent
+     */
     public Parent getOne(){ return null;}
+
+    /**
+     * Get num long.
+     * @return the long
+     */
     public long getNum(){return  99L;}
 }
 

@@ -7,7 +7,7 @@
 package com.wiltech.crashcourse.inheritance;
 
 /**
- *
+ * The type Tiger.
  */
 public class Tiger extends Animal {
     public String favoriteFood() {

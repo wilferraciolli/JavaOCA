@@ -10,12 +10,16 @@ import java.time.LocalDate;
 import java.time.Period;
 
 /**
- *Period, Instant and Duration
+ * Period, Instant and Duration
  * Period = number of days between two dates.
  * Instant =  Current moment in date and time
  */
 public class DateExamples2 {
 
+    /**
+     * The entry point of application.
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         LocalDate today = LocalDate.of(2018,10,8);
 

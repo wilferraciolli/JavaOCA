@@ -7,7 +7,7 @@
 package com.wiltech.chapter.one;
 
 /**
- *
+ * The type Main.
  */
 public class Main {
 
