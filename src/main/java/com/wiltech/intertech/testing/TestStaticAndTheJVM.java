@@ -1,4 +1,6 @@
-package com.wiltech.intertech.lesson3;
+package com.wiltech.intertech.testing;
+
+import com.wiltech.intertech.lesson3.StaticAndTheJVM;
 
 /**
  * create nultiple instances of StaticAndTheJVM and ceck that on the JVM the static variables are still only one for many objects.

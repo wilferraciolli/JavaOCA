@@ -1,6 +1,7 @@
-package com.wiltech.intertech.lesson4;
+package com.wiltech.intertech.testing;
 
-import com.wiltech.intertech.lesson3.MyDate;
+import com.wiltech.intertech.domain.Order;
+import com.wiltech.intertech.utils.MyDate;
 
 public class TestOrders {
 

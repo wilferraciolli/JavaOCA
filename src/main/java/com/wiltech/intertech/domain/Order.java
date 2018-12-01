@@ -1,10 +1,10 @@
-package com.wiltech.intertech.lesson4;
+package com.wiltech.intertech.domain;
 
-import com.wiltech.intertech.lesson3.MyDate;
+import com.wiltech.intertech.utils.MyDate;
 
 public class Order {
 
-    static double taxRate;
+    public static double taxRate;
 
     static {
         taxRate = 0.05;

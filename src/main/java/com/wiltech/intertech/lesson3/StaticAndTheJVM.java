@@ -7,7 +7,7 @@ package com.wiltech.intertech.lesson3;
 public class StaticAndTheJVM {
 
     //This static variable is created once by the JVM and is kept as single instance for the class
-    static int count = 0;
+    public static int count = 0;
 
     //instance variables used to each object created by the class
     int id;

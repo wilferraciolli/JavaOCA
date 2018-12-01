@@ -1,4 +1,6 @@
-package com.wiltech.intertech.lesson2;
+package com.wiltech.intertech.testing;
+
+import com.wiltech.intertech.lesson2.CarUsingThis;
 
 public class TestCarUsingThis {
 

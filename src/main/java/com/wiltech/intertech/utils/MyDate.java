@@ -1,10 +1,10 @@
-package com.wiltech.intertech.lesson3;
+package com.wiltech.intertech.utils;
 
 public class MyDate {
 
-    int day;
-    int year;
-    int month;
+    public int day;
+    public int year;
+    public int month;
 
     {
         this.day = 1;
