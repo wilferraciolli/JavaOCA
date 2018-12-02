@@ -27,6 +27,28 @@ public class MyDate {
         this.month = month;
     }
 
+    /**
+     * Find leap years.
+     */
+    public static void leapYears() {
+//        for (int i = 1752; i <= 2020; i = i + 4) {
+//            if ((i % 100 != 0) || (i % 400 == 0))
+//                System.out.println("The year " + i + " is a leap year");
+//        }
+
+        for (int i = 1752; i <= 2020; i++) {
+            //modules 4
+            if (i % 4 == 0) {
+                if ((i % 100 == 0) && i % 400 == 0) {
+                    //leao year is divisible by 100 and 400
+                    System.out.println("The year " + i + " is a leap year");
+                } else {
+                    //leap year is divisible by 4 and not by 100
+                    System.out.println("The year " + i + " is a leap year");
+                }
+            }
+        }
+    }
 
     @Override
     public String toString() {
