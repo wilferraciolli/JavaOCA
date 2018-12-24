@@ -28,7 +28,7 @@ public class ArraySorting {
         Arrays.sort(numbers);
 
         for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
+            System.out.print(numbers[i] + " "); // 1 6 9
+         }
     }
 }
