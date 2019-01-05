@@ -1,4 +1,4 @@
-package com.wiltech.oop.ita;
+package com.wiltech.oop.ita.lesson1;
 
 /**
  * Classe para conter dados for a paciente sobre o BMI deles.

@@ -1,4 +1,6 @@
-package com.wiltech.oop.ita;
+package com.wiltech.oop.ita.lesson1;
+
+import com.wiltech.oop.ita.lesson1.Paciente;
 
 /**
  * Initializar objetos de paciente e imprimir o que a classe Paciente pode fazer com eles.
