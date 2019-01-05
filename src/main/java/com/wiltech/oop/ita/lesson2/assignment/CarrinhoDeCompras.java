@@ -1,8 +1,7 @@
-package com.wiltech.oop.ita.lesson3;
+package com.wiltech.oop.ita.lesson2.assignment;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class CarrinhoDeCompras {
 
