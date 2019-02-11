@@ -2,9 +2,9 @@ package com.wiltech.intertech.utils;
 
 public class MyDate {
 
-    public int day;
-    public int year;
-    public int month;
+    private int day;
+    private int year;
+    private int month;
 
     {
         this.day = 1;
@@ -12,7 +12,11 @@ public class MyDate {
         this.month = 1;
     }
 
+    /**
+     * Provide default date values if constructor is empty
+     */
     public MyDate() {
+        this(1,1,1900);
     }
 
     public MyDate(final int month, final int day, final int year) {
@@ -26,6 +30,53 @@ public class MyDate {
         this.year = year;
         this.month = month;
     }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        if (valid(day, month, year)) {
+            this.day = day;
+        }
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        if (valid(day, month, year)) {
+            this.year = year;
+        }
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public void setMonth(int month) {
+        if (valid(day, month, year)) {
+            this.month = month;
+        }
+    }
+
+    private boolean valid(int day, int month, int year){
+        if (day > 31 || day < 1 || month > 12 || month < 1 ){
+            System.out.println("Attempting to create a non-valid date "
+                    + month + "/" + day + "/" + year);
+            return false;
+        }
+        switch (month){
+        case 4:
+        case 6:
+        case 9:
+        case 11: return (day <= 30);
+        case 2: return day <= 28 || ( day == 29 && year % 4 == 0) ;
+        }
+        return true;
+    }
+
 
     /**
      * Find leap years.

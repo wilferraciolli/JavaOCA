@@ -5,6 +5,7 @@ import com.wiltech.intertech.utils.MyDate;
 public class PassByExperiment {
 
     public static void main(String[] args) {
+
         //create  a new date
         MyDate date = new MyDate(1,20,2008);
 
@@ -14,10 +15,10 @@ public class PassByExperiment {
         System.out.println("After passing an object " + date);
 
         //pass in a primitive and assign a value to itself.
-        // Notingh should change as it is not being assigned to anything.
-        System.out.println("Before passing a primitive " + date.year);
-        passPrimitive(date.year);
-        System.out.println("After passing a primitive " + date.year);
+        // Nothing should change as it is not being assigned to anything.
+        System.out.println("Before passing a primitive " + date.getYear());
+        passPrimitive(date.getYear());
+        System.out.println("After passing a primitive " + date.getYear());
 
         //create a string and pass it to a method
         //note that Strings are immutable and cannot be changed
@@ -37,7 +38,7 @@ public class PassByExperiment {
     }
 
     public static void passObject(MyDate d){
-        d.year=2009;
+        d.setYear(2009);
     }
 
     public static void passPrimitive(int i) {
@@ -45,7 +46,7 @@ public class PassByExperiment {
     }
 
     public static void passString(String s){
-        //get the index of where rhte year starts
+        //get the index of where the year starts
         int yearSlash =s.lastIndexOf('/');
         //remove the year
         s = s.substring(0, yearSlash+1);
