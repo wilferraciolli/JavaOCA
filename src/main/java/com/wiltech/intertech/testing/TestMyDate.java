@@ -13,7 +13,7 @@ public class TestMyDate {
         date2.setYear(1918);
 
         final MyDate date3 = new MyDate();
-        date3.setDate(4, 21, -1968);
+        date3.setDate(4, 21, 1968);
 
         final String str1 = date1.toString();
         final String str2 = date2.toString();

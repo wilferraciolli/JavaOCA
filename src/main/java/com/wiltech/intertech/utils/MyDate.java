@@ -2,9 +2,9 @@ package com.wiltech.intertech.utils;
 
 public class MyDate {
 
-    private int day;
-    private int year;
-    private int month;
+    private byte day;
+    private byte month;
+    private short year;
 
     /**
      * Provide default date values if constructor is empty
@@ -14,18 +14,14 @@ public class MyDate {
     }
 
     public MyDate(final int month, final int day, final int year) {
-        if (valid(day, month, year)) {
-            this.day = day;
-            this.year = year;
-            this.month = month;
-        }
+         setDate(month, day, year);
     }
 
     public void setDate(final int month, final int day, final int year) {
         if (valid(day, month, year)) {
-            this.day = day;
-            this.year = year;
-            this.month = month;
+            this.day = (byte) day;
+            this.month = (byte) month;
+            this.year = (short) year;
         }
     }
 
@@ -35,7 +31,7 @@ public class MyDate {
 
     public void setDay(int day) {
         if (valid(day, month, year)) {
-            this.day = day;
+            this.day = (byte) day;
         }
     }
 
@@ -45,7 +41,7 @@ public class MyDate {
 
     public void setYear(int year) {
         if (valid(day, month, year)) {
-            this.year = year;
+            this.year = (short) year;
         }
     }
 
@@ -55,7 +51,7 @@ public class MyDate {
 
     public void setMonth(int month) {
         if (valid(day, month, year)) {
-            this.month = month;
+            this.month = (byte) month;
         }
     }
 
