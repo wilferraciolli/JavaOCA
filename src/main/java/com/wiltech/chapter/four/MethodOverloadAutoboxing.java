@@ -2,6 +2,7 @@ package com.wiltech.chapter.four;
 
 public class MethodOverloadAutoboxing {
 
+    //not used
     public static void autobox(Long l){
         System.out.println("Long");
     }
@@ -10,6 +11,7 @@ public class MethodOverloadAutoboxing {
         System.out.println("long primitive");
     }
 
+    //not used
     public static void autobox(Long... l){
         System.out.println("Long var args");
     }
