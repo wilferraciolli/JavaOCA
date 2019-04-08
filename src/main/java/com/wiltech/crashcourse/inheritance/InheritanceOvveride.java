@@ -38,7 +38,7 @@ class Base2{
  */
 class SubBase extends Base2{
 //this is an ovveride method, therfore it cannot change the accessibility to a more restricted
-    //eg, if the parent was private, then you could not make it protected or public...
+    //eg, if the employees was private, then you could not make it protected or public...
      void doStuff() {
             System.out.println("Sub class");
         }

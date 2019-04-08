@@ -11,4 +11,13 @@ package com.wiltech.chapter.one;
  */
 public class Main {
 
+    public static void main(String[] args) {
+
+        String s = new String("Hello");
+        StringBuilder s2 = new StringBuilder("Hello");
+        Boolean t = true;
+
+        System.out.println(s.equals(t));
+    }
+
 }

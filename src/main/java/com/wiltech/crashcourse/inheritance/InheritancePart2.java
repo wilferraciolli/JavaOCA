@@ -25,8 +25,8 @@ public class InheritancePart2 {
  */
 class Parent{
     /**
-     * Get one parent.
-     * @return the parent
+     * Get one employees.
+     * @return the employees
      */
     public Parent getOne(){ return null;}
 

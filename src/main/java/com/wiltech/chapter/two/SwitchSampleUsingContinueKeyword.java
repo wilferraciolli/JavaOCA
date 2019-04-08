@@ -23,7 +23,7 @@ public class SwitchSampleUsingContinueKeyword {
         FIRST_CHAR_LOOP:
         for (int a = 1; a <= 4; a++) {
             for (char x = 'a'; x <= 'c'; x++) {
-                //if 2 or b then skip to the outer parent loop skipping everything else
+                //if 2 or b then skip to the outer employees loop skipping everything else
                 if (a == 2 || x == 'b') {
                     continue FIRST_CHAR_LOOP;
                 }

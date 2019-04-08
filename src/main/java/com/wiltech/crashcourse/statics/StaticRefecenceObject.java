@@ -13,7 +13,7 @@ public class StaticRefecenceObject {
 }
 
 /**
- * The type Thing parent.
+ * The type Thing employees.
  */
 class ThingParent {
     /**
