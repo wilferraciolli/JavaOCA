@@ -9,6 +9,7 @@ public class FinalMembers {
         this.volume = volume;
     }
 
-    public FinalMembers() {
-    }
+    //declaring a default contrictor will brake the code as it expects every variable to get initiated
+//    public FinalMembers() {
+//    }
 }
