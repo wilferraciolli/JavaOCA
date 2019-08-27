@@ -24,4 +24,8 @@ public class ReturningValues {
     public static void incrementWrapper(BigInteger numberInt) {
           numberInt.add(new BigInteger("1"));
     }
+
+    public int sum (int a, int b){
+        return a + b+1;
+    }
 }

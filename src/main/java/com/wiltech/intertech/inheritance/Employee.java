@@ -6,7 +6,6 @@
  */
 package com.wiltech.intertech.inheritance;
 
-import com.sun.jnlp.PersistenceServiceNSBImpl;
 import com.wiltech.intertech.inheritance.employees.Musician;
 import com.wiltech.intertech.inheritance.employees.Person;
 import com.wiltech.intertech.inheritance.manager.Manager;

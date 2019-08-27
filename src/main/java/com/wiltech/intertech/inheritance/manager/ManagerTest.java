@@ -11,7 +11,7 @@ public class ManagerTest extends Person {
     public static void main(String[] args) {
 
         Manager m = new Manager();
-        m.doStuff();
+        //m.doStuff();
     }
 }
 
