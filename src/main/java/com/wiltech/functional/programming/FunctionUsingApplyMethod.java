@@ -58,7 +58,7 @@ public class FunctionUsingApplyMethod {
 
 class Employee {
 
-    private final String name;
+    private String name;
     Integer age;
 
     public Employee(String name, Integer age) {
@@ -72,6 +72,10 @@ class Employee {
 
     public Integer getAge() {
         return age;
+    }
+
+    public void setName(String firstName) {
+        this.name = firstName;
     }
 }
 
