@@ -4,18 +4,17 @@
  * Author   : ferraciolliw
  * Date     : 27 Aug 2019
  */
-package com.wiltech.functional.prgogramming;
+package com.wiltech.functional.programming;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
  *
  */
-public class Functions {
+public class FunctionUsingApplyMethod {
 
     public static void main(String[] args) {
         //define the function body
@@ -31,15 +30,15 @@ public class Functions {
 
         //call the function
         List<String> employeeNameList = convertEmployeeToNameList(employees, functionEmployeeToString);
-        List<String> employeeNameList1 = employees.stream()
-                .map(Employee::getName)
-                .collect(Collectors.toList());
+        //        List<String> employeeNameList1 = employees.stream()
+        //                .map(Employee::getName)
+        //                .collect(Collectors.toList());
 
         //print them out
         employeeNameList.stream()
                 .forEach(System.out::println);
-        employeeNameList1.stream()
-                .forEach(System.out::println);
+        //        employeeNameList1.stream()
+        //                .forEach(System.out::println);
 
     }
 

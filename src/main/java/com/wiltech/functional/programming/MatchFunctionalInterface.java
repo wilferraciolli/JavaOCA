@@ -4,7 +4,7 @@
  * Author   : ferraciolliw
  * Date     : 27 Aug 2019
  */
-package com.wiltech.functional.prgogramming;
+package com.wiltech.functional.programming;
 
 /**
  *
