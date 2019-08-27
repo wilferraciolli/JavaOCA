@@ -77,6 +77,10 @@ class Employee {
     public void setName(String firstName) {
         this.name = firstName;
     }
+
+    @Override public String toString() {
+        return "Employee :" + name;
+    }
 }
 
 

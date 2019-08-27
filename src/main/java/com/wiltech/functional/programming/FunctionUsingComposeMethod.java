@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
  *
@@ -38,25 +37,25 @@ public class FunctionUsingComposeMethod {
                 new Employee("George Ferraciolli", 4)
         );
 
-        List<Employee> employees2 = Arrays.asList(
-                new Employee("Wiliam Ferraciolli", 34),
-                new Employee("Maria Georgiou", 28),
-                new Employee("George Ferraciolli", 4)
-        );
+        //        List<Employee> employees2 = Arrays.asList(
+        //                new Employee("Wiliam Ferraciolli", 34),
+        //                new Employee("Maria Georgiou", 28),
+        //                new Employee("George Ferraciolli", 4)
+        //        );
 
         //call the function, this will get the employee name and then get the first letter of their names
         List<String> employeeNameList = convertEmployeeToNameList(employees, functionEmployeeToName.compose(employeeFirstNameFunction));
-        List<String> employeeFirstNameList = employees2.stream()
-                .map(employee -> employee.getName())
-                .map(name -> name.substring(0, name.indexOf(" ")))
-                .collect(Collectors.toList());
+        //        List<String> employeeFirstNameList = employees2.stream()
+        //                .map(employee -> employee.getName())
+        //                .map(name -> name.substring(0, name.indexOf(" ")))
+        //                .collect(Collectors.toList());
 
         //print them out
         employeeNameList.stream()
                 .forEach(System.out::println);
 
-        employeeFirstNameList.stream()
-                .forEach(System.out::println);
+        //        employeeFirstNameList.stream()
+        //                .forEach(System.out::println);
 
     }
 
